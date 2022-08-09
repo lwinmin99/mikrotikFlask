@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for data in datas %}
+        <h6>Api Data</h6>
+        {% for key, value in data.items() %}
+            <p class="article-content">{{ key }} {{value}}</p>
+        {% endfor %}
+    {% endfor %}
+{% endblock content %}
