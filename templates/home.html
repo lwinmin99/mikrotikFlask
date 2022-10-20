@@ -1,9 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
     {% for data in datas %}
-        <h6>Api Data</h6>
+        <h6>Api Data {{ data[".id"] }}</h6>
+<!--        <p><input type="submit" value="submit"/></p>-->
         {% for key, value in data.items() %}
-            <p class="article-content">{{ key }} {{value}}</p>
+            <p class="article-content" style="margin-left:40px">"{{ key }}" :  "{{value}}"</p>
         {% endfor %}
     {% endfor %}
 {% endblock content %}
